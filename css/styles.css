@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --colorp1: #404040;
+    --colorp2: #8a8a8a;
+    --colorp3: #f11058;
+    --colorp4: #25c8ec;
+    --colorp5: #7022d6;
+}
+
+.colorp1 {
+    color: var(--colorp1);
+}
+
+.colorp2 {
+    color: var(--colorp2);
+}
+
+.colorp3 {
+    color: var(--colorp3);
+}
+
+.colorp4 {
+    color: var(--colorp4);
+}
+
+.colorp5 {
+    color: var(--colorp5);
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.displayFJustifyCAlignC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayFJustifyC {
+    display: flex;
+    justify-content: center;
+}
+
+.displayFJustifySB {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.width100P {
+    width: 100%;
+}
+
+.width80P {
+    width: 80%;
+}
+
+.height100VH {
+    height: 100vh;
+}
+
+.marginAuto {
+    margin: auto;
+}
+
+.marginTB15 {
+    margin: 15px 0px;
+}
+
+.marginT20 {
+    margin-top: 20px;
+}
+
+.marginLR15 {
+    margin: 0px 15px;
+}
+
+.marginTN40 {
+    margin-top: -40px;
+}
+
+.paddingLR15 {
+    padding: 0px 15px;
+}
+
+.cCardProfile {}
+
+.cardProfile {
+    width: 350px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardProfile:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+
+.cCardProfile:nth-child(1) .cardProfile::before {
+    background: #fdb32b;
+}
+
+.cCardProfile:nth-child(2) .cardProfile::before {
+    background: #dbdbdb;
+}
+
+.cCardProfile:nth-child(3) .cardProfile::before {
+    background: #0a75a3;
+}
+
+.cardProfile:hover:before {
+    top: 0;
+}
+
+.cardProfile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cDetails {
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+}
+
+.cDetailsSocial {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+}
+
+.cardProfile:hover .cDetailsSocial {
+    top: 0;
+}
